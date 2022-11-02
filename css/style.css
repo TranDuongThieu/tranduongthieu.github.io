@@ -1,0 +1,586 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+    font-size: 15px;
+}
+html{
+    font-family: "Lato", sans-serif;
+}
+
+#main{
+    position: relative;
+}
+.fa{
+    font-size: inherit;
+}
+#header{
+    z-index: 2;
+    position:fixed;
+    top: 0;
+    height:46px;
+    width:100%;
+    background-color:black;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon{
+    width:61px;
+    height:46.5px;
+    display:inline;
+    padding :15px 24px;
+}
+.icon2{
+    width:61px;
+    height:46.5px;
+    display:inline;
+    padding :15px 20px;
+    display: none;
+}
+.fas{
+    color: white;  
+}
+
+.icon:hover{
+    background-color:#f44336;
+    cursor: pointer;
+}
+.icon2:hover .fa-bars{
+    color: black;
+}
+
+.icon2:hover{
+    color: black !important;
+    background-color: #ccc;
+    cursor: pointer;    
+}
+#nav{
+    display:flex;
+    flex-direction: row;
+}
+#nav >li{
+    list-style-type: none;
+}
+#nav >li >a ,#nav >li> div>a{
+    color: white;
+    text-decoration: none;
+    line-height:46px;
+    padding:15px 24px;
+}
+#nav >li> div>a{
+    color: white;
+    text-decoration: none;
+    line-height:46px;
+    padding:15px 24px;
+}
+
+#nav >li:hover>a {
+    background-color: #ccc;
+    color: black;
+}
+#nav >li:hover> a>i {
+    color:black;
+}
+#navbar{
+    position: relative;
+}
+.fa-caret-down{
+    color: white;
+}
+.phone-dropdown{
+    background-color: black;
+    display: none;
+}
+.phone-dropdown>li{
+    list-style: none;
+}
+.phone-dropdown>li:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+.phone-dropdown>li:hover a{
+    color: black;
+}
+.phone-dropdown>li>a{
+    text-decoration: none;
+    padding: 15px 24px;
+    line-height:46px;
+    color: white;
+}
+.dropdown-content{
+    display:none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:block;
+}
+
+.dropdown-content>div>a:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+
+#slider{
+    position: relative;
+    margin-top: 45px;
+}
+#slider>img{
+    width:100%;
+}
+#slogan{
+    position: absolute;
+    bottom: 50px;
+    left : 50%;
+    transform: translate(-50%);
+    text-align: center;
+    color: white; 
+}
+#slogan>h3{
+    font-size: 24px;
+    margin-bottom:28px;
+    z-index: 1;
+}
+#slogan>p{
+    z-index:1;
+    font-size:15px;
+}
+.padding{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.setting{
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#content{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.intro{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subtitle{
+    text-align: center;
+    font-style: Italic;
+    opacity: 0.6;
+}
+.intro>.content{
+    max-width: 800px;
+    margin: 25px auto;
+    line-height: 1.4;
+    font-size: 15px;
+    text-align: justify;
+}
+.pictures{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+.pictures>div>img{
+    width: 127px;
+    height: 127px;
+    border:none;
+    border-radius:4px;
+}
+.pictures>div>p{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.ticket{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+#dates{
+    max-width: 800px;
+    margin-top: 35px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    margin-bottom: 32px;
+}
+#dates>li {
+    list-style-type:none;
+    padding: 8px 16px;
+    border: 1px solid rgb(221, 221, 221);
+    
+}
+#dates>li>.month{
+    opacity: .6;
+}
+#dates>li> .sold{
+    margin-left: 20px;
+    background-color: #f44336 !important;
+    padding: 4px 8px;
+    opacity: 1;
+    color: white;
+}
+#number{
+    padding: 4.5px 10px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;   
+    position: absolute;
+    right: 20px;
+    bottom:2px;
+}
+
+#places-container{
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:0px ;
+    justify-content: space-between;
+}
+.place{
+    background-color: white;
+    color: black;
+    width: 32%;
+}
+.place>img{
+    width: 100%;
+}
+.place>img:hover{
+    opacity: 0.6;
+}
+.place>p{
+    margin-top: 15px;
+    padding-left: 16px; 
+}
+.subdate{
+    opacity: .6;
+}
+.place>button{
+    margin-top: 15px;
+    margin-left: 16px;
+    border: none;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    margin-bottom: 15px;   
+}
+.place>button:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+#form-tickets{
+    display: none;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    width: 800px;
+    background-color: white;
+    animation: show-formtickets  .4s ease;
+}
+@keyframes show-formtickets {
+    from{
+        top: 0;
+        opacity: 0;
+    }
+    to{
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        opacity: 1;
+    }
+}
+
+#form-tickets>#title{
+    padding :32px 16px;
+    background-color: #009688;
+}
+#form-tickets>#title>i,
+#form-tickets>#title>span{
+    font-size: 30px;
+    font-weight: 400px;
+    letter-spacing: 4px;
+}
+#form-tickets>#title{
+    text-align: center;    
+    padding-top:45px;
+    color: white;
+}
+
+#close{
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding:10px 15px;
+    color: white;
+}
+#close:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+.distance{
+    margin-top: 15px;
+}
+.tickets-infor{
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 70%px;
+}
+.tickets-infor>input{
+    margin-right: 15px;
+    width: 100%;
+    padding: 8px;
+}
+.pay{
+    width: 100%;
+    padding: 15px;
+    background-color: #009688;
+    border: none;
+    color: white;
+}
+.more-distance{
+    margin-top: 30px;
+}
+.btn-close{
+    padding: 10px 14px;
+    color: white;
+    background-color: #f44336;
+    border: none;
+}
+.tickets-infor>span{
+    float:right;
+    margin-top: 30px;
+}
+.tickets-infor>span>a{
+    color: #2196F3;
+}
+.tickets-infor>button:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+.space{
+    padding: 10px;
+}
+.shadow{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+.contact{
+    margin-bottom: 100px;
+}
+.layout{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.layout>.left-layout{
+    width: 50%;
+}
+.layout>.left-layout>div>i{
+    width: 30px;
+    margin-right: 5px;
+}
+.layout>.left-layout>div{
+    font-size: 18px !important;
+    line-height: 1.5;
+    font-family: "Lato", sans-serif;
+}
+.layout>.right-layout{
+    width:50%;
+}
+
+.right-layout>.row1{
+    display: flex;
+    flex-direction: row;
+}
+.row1> input{
+    padding :8px;
+    margin-bottom: 10px;
+    width: 50%; 
+    border: 1px solid #ccc;
+}
+#input1{
+    margin-right: 5px;
+}
+#input2{
+    margin-left: 5px;
+}
+#input3{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.right-layout>button{
+    float: right;
+    margin:8px 16px;
+    margin-right: 0;
+    padding: 8px 16px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+.right-layout>button:hover{
+    background-color: #ccc;
+    color:black;
+    cursor: pointer;
+}
+#footer a{
+    color:black;
+}
+#footer{
+    margin-top: 50px;
+    text-align: center;
+    opacity: .6;
+}
+#footer i{
+    font-size: 25px;
+    margin: 1px;
+    
+    margin-bottom: 40px;
+}
+#footer i:hover{
+    opacity: 0.3;
+}
+#footer p{
+    margin-bottom: 60px;
+}
+
+/* Phone */
+@media only screen and (max-width:600px){
+    .phone-respon{
+        display:none;
+    }
+    .icon{
+        display: none;
+    }
+    .icon2{
+        display: block;
+    }
+    #header{
+        display: inline-block
+    }
+    #header>.icon2{
+        position: absolute;
+        right:0;    
+        top: 0; 
+    }
+    #slogan{
+        display: none;
+    }
+    #places-container{  
+        flex-direction: column;
+    }
+    .place{
+        width: 100%;
+        height: 100%;
+    }
+
+    .intro>.content,
+    #dates,#places-container{
+        margin-left: 15px;
+        margin-right: 15px;
+    }  
+    .left-layout{
+        margin-left: 15px;
+        width:100%;
+    }
+    .right-layout{
+        width:100% !important;
+    }
+    .pictures{
+        flex-direction: column;
+        text-align: center !important;
+    }
+    .pictures>div{
+        width: 100%;
+    }
+    .pictures>div>img{
+        width: 60%;
+        height: 60%;
+    }
+    .layout{
+        flex-direction: column;
+    }
+    #input1,#input2,#input3{
+        width: 100%;
+        margin:5px 0;
+    }
+    .row1{
+        margin-top: 10px;
+        flex-direction: column !important;
+        margin-left: 15px;
+        margin-right: 15px;
+        width: auto;
+    }
+    .row2{
+        margin-left: 15px;
+        margin-right: 15px;
+        width: auto;
+    }
+    .right-layout>button{
+        margin-right:15px;
+    }
+    #form-tickets{
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* TABLET */
+@media only screen and (min-width:601px) and 
+(max-width:1023px) 
+{
+    .intro>.content,
+    #dates,#places-container,
+    .pictures {
+        margin-left: 15px;
+        margin-right: 15px;
+    }  
+    .left-layout{
+        margin-left: 15px;
+    }
+    .right-layout{
+        margin-right: 10px;
+    }
+    #form-tickets{
+        width: 500px;
+    }
+}

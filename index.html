@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+                <ul id="nav">
+                    <li ><a href="#slider">HOME</a></li>
+                    <li><a class="phone-respon" href="#theband">BAND</a></li>
+                    <li><a class="phone-respon" href="#tourdate">TOUR</a></li>
+                    <li><a class="phone-respon" href="#contact">CONTACT</a></li>
+                    <li class="navbar phone-respon" onmouseover="dropdown()" onmouseleave="deleteDropdown()">
+                        <a href=""  title="More">MORE
+                        <i class="fas fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <div><a href="">Merchandise</a></div>
+                            <div><a href="">Media</a></div>
+                            <div><a href="">Extras</a></div>
+                        </div>
+                    </li>
+                </ul>
+            <div class="icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="icon2" onclick="addDropdownphone()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="phone-dropdown">
+                <li><a href="#theband">BAND</a></li>
+                <li><a href="#tourdate">TOUR</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#">MERCH</a></li>
+            </div>
+        </div>
+        <div id="slider">
+            <img src="./img/slider/chicago.jpg" alt="">
+            <div id="slogan">
+                <h3>Chicago</h3>
+                <p>Thank you, Chicago - A night we won't forget.</p>
+            </div>
+        </div>
+        <div id="content">
+            <div class="padding intro" id="theband">
+                <div class="setting">THE BAND</div>
+                <p class="subtitle">We love music</p>
+                <p class="content">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="pictures">
+                    <div>
+                        <p>Name</p>
+                        <img src="./img/slider/bandmember.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Name</p>
+                        <img src="./img/slider/bandmember.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>Name</p>
+                        <img src="./img/slider/bandmember.jpg" alt="">
+                    </div>
+                </div>
+            </div> 
+            <div class="ticket  padding" id="tourdate">
+                <div class="setting">TOUR DATES</div>
+                <div class="subtitle">Remember to book your tickets!</div> 
+                <ul id="dates">
+                    <li>
+                        <span class="month">September</span> 
+                        <span class="sold">Sold out</span>
+                    </li>
+                    <li>
+                        <span class="month">October</span>
+                        <span class="sold">Sold out</span>
+                    </li>
+                    <li  style="position:relative">
+                        <span class="month">November</span>
+                        <span id="number">3</span>
+                    </li>
+                </ul> 
+                <div id="places-container">
+                    <div class="place">
+                        <img src="./img/slider/newyork.jpg" alt="">                
+                        <p><strong>New York</strong></p>
+                        <p class="subdate">Fri 27 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button onclick="showTicketsform()">Buy Tickets</button>                   
+                    </div>
+                    <div class="place">
+                        <img src="./img/slider/paris.jpg" alt="">
+                        <p><strong>Paris</strong></p>
+                        <p class="subdate">Sat 28 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button onclick="showTicketsform()">Buy Tickets</button>
+                    </div>
+                    <div  class="place">
+                        <img src="./img/slider/sanfran.jpg" alt="">
+                        <p><strong>San Francisco</strong></p>
+                        <p class="subdate">Sun 29 Nov 2016</p>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button onclick="showTicketsform()">Buy Tickets</button>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="padding contact" id="contact">
+                <div class="setting">CONTACT</div>
+                <div class="subtitle">Fan? Drop a note!</div> 
+            <div class="layout">
+                <div class="left-layout">
+                    <div><i class="fa fa-map-marker-alt"></i>Chicago, US</div>
+                    <div><i class="fa fa-phone"></i>Phone: +00 151515</div>
+                    <div><i class="fa fa-envelope"></i>Email: mail@mail.com</div>
+                </div>
+                <div class="right-layout">
+                    <div class="row1">
+                        <input id="input1"  type="text" placeholder="Name" required name="Name">
+                        <input id="input2" type="text" placeholder="Email">
+                    </div>
+                    <div class="row2"><input id="input3" type="text" placeholder="Message"></div>
+                    <br>
+                    <button>SEND</button>
+                </div>
+            </div>
+            </div>
+            <img src="./img/slider/map.jpg" alt="" style="width: 100%;">
+        </div>
+        <div id="footer">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-snapchat"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+            <p>Powered by  <a href="">w3.css</a></p>
+        </div>
+        <div class="shadow" onclick="closeTicketsform()">
+            <div id="form-tickets" class="stopCloseticketsform">
+                <p onclick="closeTicketsform()" id="close">x</p>
+                <div id="title">
+                        <i class="fa fa-suitcase"></i>
+                        <span>Tickets</span>
+                </div>
+                <div class="tickets-infor">
+                        <label class="distance" for="quantily">
+                            <i class="fa fa-shopping-cart"></i>
+                            Tickets, $15 per person
+                        </label>
+                        <br>
+                        <input style="margin-bottom: 15px;" class="distance" name="quantily" id="quantily" type="text" placeholder="How many?">
+                        <br>
+                        <label class="distance" for="email">
+                            <i class="fa fa-user"></i>
+                            Send To
+                        </label>
+                        <br>
+                        <input class="distance" type="text" name="email" id="email" placeholder="Enter Email">
+                        <br>
+                        <button class="distance pay">PAY<i class="fa fa-check"></i></button>
+                        <br>
+                        <button onclick="closeTicketsform()" class="more-distance btn-close">Close <i class="fa fa-remove"></i></button>
+                        <span>Need <a href="">help</a></span>
+                        <div class="space"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="theband.js" ></script>
+</body>
+</html>
